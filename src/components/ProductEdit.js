@@ -128,7 +128,7 @@ function ProductEdit() {
                     onClick={
                       async (e) => {
                         setIsPending(true);
-                        await axios.put(`http://localhost:4040/api/${data.id}`, { productName, productCategory, productLocation, productPrice, productQuantity, description })
+                        await axios.put(`https://farmconnect-server.herokuapp.com/api/${data.id}`, { productName, productCategory, productLocation, productPrice, productQuantity, description })
                           .then(() => {
                             setIsPending(false);
                             setIsPosted(true);

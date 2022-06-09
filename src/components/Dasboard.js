@@ -89,7 +89,7 @@ function Dashboard() {
                     <button
                       className="Edit buy delete"
                       onClick={async (e) => {
-                        await axios.delete(`http://localhost:4040/api/${data.id}`)
+                        await axios.delete(`https://farmconnect-server.herokuapp.com/api/${data.id}`)
                           .then(() => {
                             console.log('Deleted');
                             window.location.reload();
