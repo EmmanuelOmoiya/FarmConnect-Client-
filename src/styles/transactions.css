@@ -1,0 +1,60 @@
+.transactions{
+    padding-left: 24%;
+    padding-bottom: 5rem;
+    padding-top: 7rem;
+    background-color: var(--gray);
+}
+
+.numl {
+    color: red;
+}
+
+.ft{
+    width: 23%;
+}
+
+.trantop{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid var(--greyy);
+}
+
+.trandet{
+    width: 97%;
+    margin-right: 2rem;
+    background-color: var(--white);
+    border-radius: 3px;
+    height: auto;
+}
+
+.trantop p{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.trans{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    text-align: left;
+    color: var(--grey);
+    border-bottom: 1px solid var(--greyy);
+}
+
+.cr{
+    color: var(--green);
+}
+
+@media screen and (max-width: 480px) {
+    .transactions{
+        padding-left: 1rem;
+        padding-top: 5rem;
+    }
+
+    .ft{
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

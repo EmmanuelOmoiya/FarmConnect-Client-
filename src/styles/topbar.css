@@ -1,0 +1,85 @@
+.topbar{
+    height: 4rem;
+    padding-left: 24%;
+    width: 100vw;
+    background-color: var(--white);
+    font-size: 1rem;
+    color: var(--black);
+    position: fixed;
+    bottom: 0;
+    padding-top: .6rem;
+    flex: 2;
+    top: 0;
+}
+
+.topbar .logo{
+    display: none;
+}
+
+.trs{
+    padding-top: 0 ;
+    margin: 0;
+    border-radius: 3px;
+}
+
+.infoe{
+    float: right;
+    display: flex;
+    margin-right: 2rem;
+}
+
+.profilepic{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.notif{
+    margin-right: 1rem;
+}
+
+.frh{
+    text-align: center;
+    align-items: center;
+    padding-top: .9rem;
+}
+
+@media screen and (max-width: 480px) {
+    .trs{
+        display: none;
+    }
+
+    .infoe{
+        float: none;
+    }
+
+    .topbar{
+        padding-left: 0;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .topbar .logo{
+        width: 3rem;
+    }
+
+    .topbar .profilepic{
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .hamburger .activ:nth-child(1){
+        transform: rotateX(20deg) rotateY(40deg);
+    }
+
+    .topbar .logo{
+        display: block;
+    }
+
+    .frh{
+        padding-top: .6rem;
+    }
+}

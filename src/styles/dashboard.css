@@ -1,0 +1,304 @@
+.dashboard,
+.chat{
+    background-color: var(--gray);
+    padding-left: 24%;
+    padding-top: 7rem;
+    height: 100%;
+    padding-bottom: 2rem;
+}
+
+.topb{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.actr .link{
+    width: 100%;
+}
+
+.welb{
+    flex: 2;
+    background-color: var(--white);
+    padding: 1.6rem;
+    width: 60%;
+    border-radius: 5px;
+    display: flex;
+    box-shadow:  2px 5px 10px var(--grey);
+}
+
+.weab{
+    flex: 1;
+    background-color: var(--white);
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-radius: 5px;
+    padding: 1.6rem;
+    box-shadow:  2px 5px 10px var(--grey);
+}
+
+.welb img{
+    width: 9rem;
+}
+
+.hena{
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: var(--green);
+}
+
+.intrb{
+    font-weight: 500;
+    font-size: 1.14rem;
+    margin-right: 1rem;
+}
+
+.welb span{
+    float: left;
+}
+
+.restb{
+    display: flex;
+}
+
+.leftb{
+    flex: 2;
+    width: 60%;
+}
+
+.rightb{
+    flex: 1;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    height: calc(100vh - 45vh);
+    box-shadow:  2px 5px 10px var(--greyy);
+    background-color: var(--white);
+    border-radius: 5px;
+}
+
+.rigt{
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+.rigt p{
+    margin-bottom: 1rem;
+}
+
+.actr{
+    display: flex;
+    justify-content: space-between;
+}
+
+.add,
+.prn,
+.baln{
+    width: 30%;
+    height: 9rem;
+    background-color: var(--white);
+    box-shadow:  2px 5px 10px var(--grey);
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 1.2rem;
+}
+
+.addt,
+.prnt,
+.balt{
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.add{
+    cursor: pointer;
+}
+
+.add img{
+    width: 2.3rem;
+}
+
+.numr{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:#FFBF00;
+}
+
+.amba{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--green);
+}
+
+.rte{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.producr{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rgy{
+    margin-top: -1rem;
+}
+
+.producr .right-g{
+    width: 43%;
+}
+
+.copyrightrf{
+    display: none;
+}
+
+.farmdept{
+    text-align: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1.3rem;
+}
+
+.rigt{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.rigt span{
+    font-size: 1rem;
+    color: var(--grey);
+}
+
+.fd{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.fd img{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+
+    .farmdept{
+        font-size: 1.2rem;
+        margin-bottom: .9rem;
+    }
+
+    .rigt{
+        font-weight: 500;
+        font-size: 1rem;
+    }
+
+    .dashboard{
+        padding-left: 0;
+        padding-top: 5rem;
+        background-color: var(--greyy);
+    }
+
+    .topb{
+        display: block;
+    }
+
+    .welb{
+        flex: none;
+        width: 87%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    .weab{
+        width: 87%;
+        margin-left: auto;
+        margin-right: auto;
+        flex: 0;
+    }
+
+    .hena{
+        font-size: 1.2rem;
+    }
+
+    .intrb{
+        font-size: .9rem;
+        margin-bottom: .5rem;
+    }
+
+    .welb img{
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    .restb,
+    .actr{
+        display: block;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .add,
+    .prn,
+    .baln{
+        width: 87%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 1rem;
+        flex: 1 1 8rem;
+        margin-right: 1rem;
+        box-shadow:  2px 4px 10px var(--grey);
+    }
+
+    .leftb{
+        width: 100%;
+    }
+
+    .rte{
+        font-weight: 600;
+        font-size: 1.2rem;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1.9rem;
+    }
+
+    .producr{
+        width: 87%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 3px;
+    }
+    .rightb{
+        width: 87%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .prnt,
+    .balt,
+    .addt{
+        font-weight: 600;
+        font-size: 1.1rem;
+    }
+
+    .copyrightrf{
+        display: block;
+        margin-top: 1.5rem;
+        text-align: center;
+        align-items: center;
+    }
+
+    .copt{
+        font-size: .6rem;
+        color: var(--grey);
+    }
+}

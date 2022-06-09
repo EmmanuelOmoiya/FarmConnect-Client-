@@ -1,0 +1,205 @@
+.products,
+.productedit{
+    padding-left: 24%;
+    padding-bottom: 5rem;
+    padding-top: 7rem;
+    background-color: var(--gray);
+    width: 100%;
+}
+
+.toprt{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+.trte{
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.res{
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.produpre{
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 2rem;
+}
+
+.checkout{
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -9rem;
+    padding: 2.3rem;
+    background-color: var(--white);
+}
+
+.checkout .left{
+    margin-right: 1.3rem;
+    flex: 1;
+}
+
+.checkout .right{
+    padding: 1rem;
+    flex: 2;
+}
+
+.checkout .left img{
+    width: 90%;
+}
+
+.productnad{
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.right span{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.productqaun{
+    margin-left: .5rem;
+    font-weight: 600;
+}
+
+.choose{
+    margin-top: .8rem;
+    display: flex;
+    justify-content: space-between;
+    width: 5rem;
+    margin-bottom: 2rem;
+}
+
+.choose button{
+    width: 1.7rem;
+    background-color: transparent;
+    height: 2rem;
+    border: 1px solid var(--gray);
+    font-size: 1.3rem;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.farmdet{
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.select{
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.purch{
+    width: 18rem;
+    height: 2.6rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.farming{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+     float: left;
+}
+
+.farmerNam{
+    float: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+}
+
+.insider{
+    padding-top: 0;
+    padding-left: 0;
+}
+
+.delete{
+    background-color: var(--red);
+    margin-left: -2rem;
+}
+
+@media screen and (max-width: 480px) {
+    .checkout{
+        width: 87%;
+        display: block;
+        padding: 1rem;
+    }
+
+    .right{
+        width: 100%;
+    }
+
+    .farmerNam{
+        display: block;
+    }
+
+    .farming{
+        display: block;
+        float: none;
+        margin-bottom: 0;
+    }
+
+    .productnad{
+        font-size: 1.7rem;
+        font-weight: 600;
+    }
+
+    .farmdet{
+        font-size: 1rem;
+    }
+
+    .select{
+        font-size: .9rem;
+        font-weight: 500;
+    }
+
+    .right span p{
+        margin-left: .5rem;
+        font-size: .8rem;
+    }
+
+    .purch{
+        border-radius: 3px;
+        width: 100%;
+    }
+
+    .products,
+    .productedit{
+        padding-left: 1rem;
+        padding-top: 5rem;
+        background-color: var(--greyy);
+    }
+
+    .toprt{
+        display: flex;
+        flex-wrap: wrap;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .res{
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+    
+}

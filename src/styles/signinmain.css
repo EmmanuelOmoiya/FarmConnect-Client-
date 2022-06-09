@@ -1,0 +1,76 @@
+.signinmain{
+    text-align: center;
+    align-items: center;
+    background-image: url('../Assets/Farmerbg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    object-fit: cover;
+    height: 100vh;
+}
+
+.signinmain img{
+    width: 8rem;
+    margin-bottom: 1.4rem;
+}
+
+.getstart{
+    font-size: 4.3rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    width: 26rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--white);
+}
+
+.farmer{
+    width: 10rem;
+    height: 3.5rem;
+    background-color: var(--white);
+    color: var(--black);
+    font-family: inherit;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.customer{
+    width: 10rem;
+    height: 3.5rem;
+    background-color: transparent;
+    border: 3px solid var(--white);
+    color: var(--white);
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.signinma{
+    padding-top: 6rem;
+    background-color: var(--blackopacity);
+    height: 100%;
+}
+
+@media screen and (max-width: 480px) {
+    .signinmain{
+        background: url('../Assets/Farmerbg.jpg') no-repeat fixed center;
+    }
+
+    .signinma img{
+        width: 5rem;
+    }
+
+    .getstart{
+        font-size: 2.8rem;
+        width: 100%;
+        margin-top: 3rem;
+    }
+
+    .farmer,
+    .customer{
+        width: 7rem;
+    }
+}

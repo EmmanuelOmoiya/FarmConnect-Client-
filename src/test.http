@@ -1,0 +1,9 @@
+POST  "https://icreate-server.herokuapp.com/api/user" HTTP/1.1
+Content-Type: application/json
+
+{
+    "fullName" : "Emmanuel",
+    "email" : "ex@example.com",
+    "password" : "emmanuel",
+    "role" : "farmer"
+}

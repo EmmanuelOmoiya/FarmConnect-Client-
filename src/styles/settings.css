@@ -1,0 +1,268 @@
+.settings{
+    padding-left: 24%;
+    padding-bottom: 5rem;
+    padding-top: 7rem;
+    background-color: var(--gray);
+}
+
+.settings-title {
+    color: var(--green);
+    margin-bottom: 1.4rem;
+  }
+  
+  .settings-main {
+    width: 96%;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 28px;
+  }
+  
+  .settings-list-p {
+    cursor: pointer;
+  }
+
+  .settings-nav{
+      height: 3rem;
+  }
+  
+  .nav-u {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-list {
+    margin-right: 3rem;
+  }
+  
+  .under-p {
+    width: 3rem;
+    background-color: var(--green);
+    height: .3rem;
+    border-radius: 3px;
+    margin-top: .5rem;
+  }
+  
+  .chanpa {
+    margin-top: 2rem;
+  }
+  
+  hr {
+    border: none;
+    height: 1px;
+    width: 100%;
+    margin-bottom: 5px;
+    margin-top: .2rem;
+    background-color: #d3d1d1;
+  }
+  
+  .passwordpg {
+    margin-top: 20px;
+    padding: 10px;
+  }
+  
+  .change-pass {
+    margin-right: 10px;
+  }
+  
+  .chanpa,
+  .newpa,
+  .conpa {
+    margin-bottom: 10px;
+  }
+  
+  .chanpa-input {
+    width: 450px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 40px;
+    outline: none;
+    padding: 15px;
+    font-family: inherit;
+    margin-bottom: 16px;
+  }
+  
+  .chang-passbtn {
+    width: 100px;
+    height: 30px;
+    color: #fff;
+    background-color: var(--green);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 350px;
+  }
+  
+  .payments-title {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .payment-nim {
+    margin-bottom: 10px;
+  }
+  
+  .change-profile {
+    width: 100px;
+    height: 40px;
+    color: #fff;
+    background-color: var(--green);
+    border: none;
+    border-radius: 2px;
+    font-size: 17px;
+    font-family: inherit;
+    margin-top: 10px;
+    margin-left: 87%;
+    cursor: pointer;
+  }
+  
+  .img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 7px;
+  }
+  
+  .settings-hero-top-pimg {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  
+  .pimg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 100px;
+    margin-top: -30px;
+  }
+  
+  .address-input {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 40px;
+    outline: none;
+    padding: 15px;
+    font-family: inherit;
+    margin-bottom: 16px;
+  }
+  
+  .fistname {
+    margin-bottom: 10px;
+  }
+  
+  .remove {
+    background-color: #eee;
+    color: var(--green);
+    width: 80px;
+    height: 35px;
+    border-radius: 2px;
+    font-family: inherit;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+  
+  .change {
+    color: #eee;
+    background-color: var(--green);
+    width: 80px;
+    height: 35px;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
+  }
+  
+  .input-settings {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    padding-top: 40px;
+  }
+  
+  .input-settings input {
+    width: 100%;
+  }
+
+  .inset{
+      display: flex;
+      flex-wrap: wrap;
+  }
+  
+  .fullname-input,
+  .email-input,
+  .mobile-number-input,
+  .farm-name-input {
+    width: 450px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 40px;
+    outline: none;
+    padding: 15px;
+    font-family: inherit;
+    margin-bottom: 16px;
+  }
+  
+  .conpa-input,
+  .newpa-input {
+    width: 450px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 40px;
+    outline: none;
+    padding: 15px;
+    font-family: inherit;
+    margin-bottom: 16px;
+  }
+
+  .fullname-input,
+  .email-input,
+  .mobile-number-input,
+  .farm-name-input{
+    width: 45%;
+  }
+
+@media screen and (max-width: 480px) {
+  .settings{
+    height: auto;
+    padding-left: 1rem;
+    padding-top: 5rem;
+    background-color: var(--white);
+  }
+
+  .nav-list{
+    margin-right: .8rem;
+  }
+
+  .pimg{
+    margin-left: 2rem;
+  }
+
+  .input-settings{
+    width: 100%;
+  }
+
+  .change-profile,
+  .chang-passbtn{
+    margin-left: 0;
+  }
+
+  .passwordpg{
+    width: 100%;
+  }
+
+  .chanpa-input,
+  .newpa-input,
+  .conpa-input{
+    width: 97%;
+  }
+}

@@ -1,0 +1,665 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5.4rem 1rem 6.4rem;
+    text-align: center;
+    align-items: center;
+}
+
+.noth{
+    display: none;
+}
+
+.nav-ul{
+    list-style: none;
+    display: flex;
+}
+
+.link{
+    text-decoration: none;
+    color: #000;
+}
+
+.link-p{
+    margin-right: 2.5rem;
+    font-size: 1.1rem;
+}
+
+.signin{
+    border: none;
+    font-family: inherit;
+    width: 8rem;
+    height: 3rem;
+    font-size: 1.1rem;
+    background-color: var(--green);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.hero{
+    height: 32rem;
+    background-image: url('../Assets/hero.jpg');
+    background-size: 100%;
+    background-position: bottom;
+    background: url('../Assets/hero.jpg') no-repeat fixed bottom;
+}
+
+.hero-div{
+    height: 100%;
+    width: 100%;
+    background-color: var(--blackopacity);
+    padding-top: 4rem;
+}
+
+.hero-talk{
+    opacity: 1;
+    color: var(--white);
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.talk-title{
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    opacity: 0;
+    animation: slidein .4s forwards;
+}
+
+.talk-sub{
+    font-size: 1rem;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    animation: slidein .4s forwards;
+    animation-delay: .1s;
+}
+
+.hero-signin{
+    width: 11rem;
+    height: 3.3rem;
+    border: none;
+    background-color: var(--white);
+    font-size: 1.3rem;
+    font-family: inherit;
+    cursor: pointer;
+    opacity: 0;
+    animation: slidein .4s forwards;
+    animation-delay: .2s;
+}
+
+@keyframes slidein {
+    from{
+        transform: translateY(.8rem);
+    }
+    
+    to{
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.features{
+    padding: 3rem 2rem 2rem 2rem;
+}
+
+.features-grid{
+    margin: 2rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+}
+
+.features-title{
+    font-size: 2.5rem;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    font-weight: 600;
+}
+
+.grid-box{
+    width: 30%;
+    text-align: center;
+    align-items: center;
+    border: 1px solid var(--gray);
+    height: 19rem;
+    margin: 1rem;
+}
+
+.box-icon{
+    width: 3rem;
+    height: 3rem;
+    border: var(--gray);
+    border-radius: 50%;
+    background-color: var(--green);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 2.8rem;
+    text-align: center;
+    align-items: center;
+}
+
+.box-icon img {
+    color: #000;
+    text-align: center;
+    align-items: center;
+}
+
+.box-title{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.box-details{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: .8rem;
+}
+
+.box-icon,
+.grid-box:hover{
+    background-color: var(--white);
+    transition: .3s ease-in-out;
+}
+
+.grid-box:hover{
+    color: var(--white);
+    background-color: var(--green);
+    transition: .3s ease-in-out;
+}
+
+.feature2-title{
+    font-size: 2.2rem;
+    padding-bottom: 1rem;
+    font-weight: 600;
+    margin-left: 8.8rem;
+}
+
+.farm-produce{
+    width: 81.5%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    padding: 1rem 0rem 1rem 1rem;
+}
+
+.farm-left{
+    flex: 1;
+    font-size: .8rem;
+    line-height: 1.7;
+}
+
+.farm-right{
+    flex: 2;
+    margin: 0rem 2rem 0rem 2rem;
+    display: flex;
+    
+    flex-wrap: wrap;
+}
+
+.right-g{
+    min-height: 20rem;
+    max-height: 29rem;
+    margin: 0rem 1rem 2rem 1rem;
+    background-color: var(--white);
+    flex: 20%;
+    width: 45%;
+    aspect-ratio: 1 / 1;
+    box-shadow:  2px 5px 10px #ddd8d8;
+    cursor: pointer;
+    animation: pleasant 1s ease-in-out;
+}
+
+@keyframes pleasant {
+    0%{
+        scale: 1;
+    }
+    100%{
+        scale: 1.1;
+    }
+}
+
+.right-g img{
+    width: 100%;
+    object-fit: cover;
+    height: 60%;
+}
+
+.product-name{
+    margin: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+
+.product-location{
+    font-size: .8rem;
+    margin-left: 1rem;
+    color: var(--grey);
+}
+
+.product-price{
+    font-weight: 700;
+}
+
+.product-price::before{
+    content: "\20A6"
+}
+
+.sale{
+    display: flex;
+    justify-content: space-between;
+    margin: 0rem 1rem 1rem 1rem;
+    text-align: center;
+    align-items: center;
+}
+
+.buy{
+    width: 6rem;
+    height: 2rem;
+    background-color: var(--green);
+    color: var(--white);
+    border: none;
+    font-size: 1rem;
+    font-family: inherit;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.farm-left img{
+    margin-top: 5rem;
+}
+
+.community-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.bigt{
+    font-size: 3.6rem;
+    text-transform: lowercase;
+}
+
+.community-left img{
+    width: 30rem;
+}
+
+.communite{
+    display: flex;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.community-left{
+    flex: 1.9;
+}
+
+.community-right{
+    flex: 2;
+    margin-top: 8rem;
+}
+
+.community{
+    margin-bottom: 2rem;
+}
+
+.down{
+    width: 75%;
+    height: 18rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('../Assets/food.png');
+    background-position: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    box-shadow:  3px 19px 30px #000000;
+}
+
+.down-prompt{
+    font-size: 3rem;
+    width: 80%;
+    padding-top: 6.6rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--white);
+}
+
+.footer{
+    height: auto;
+    background-color: var(--bleck);
+    color: var(--white);
+    padding-top: 1rem;
+}
+
+.footer-content{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.motto{
+    width: 15rem;
+    margin-top: 1rem;
+}
+
+td,
+th{
+    padding-right: 9rem;
+    padding-bottom: 1rem;
+}
+
+td,
+.copyright{
+    color: var(--grey);
+}
+
+th{
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+.icons img{
+    margin-right: 1rem;
+    margin-bottom: .6rem;
+}
+
+.foll,
+.call{
+    margin-bottom: .6rem;
+    font-size: 1.1rem;
+}
+
+hr{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    border: none;
+    height: 1px;
+    background-color: var(--gray);
+}
+
+.copyright{
+    text-align: center;
+    align-items: center;
+    font-size: .8rem;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.topbr{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.topbr img{
+    margin-right: 1rem;
+}
+
+.hamburger{
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .nav-ul{
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        padding-top: 3rem;
+        margin-left: -1rem;
+        top: 0;
+        background-color: var(--bleckopacity);
+        color: var(--white);
+        position: fixed;
+        z-index: 1;
+        transition: all .5s ease-in-out;
+    }
+
+    .ul-li .link{
+        color: var(--white);
+        font-size: 1.5rem;
+    }
+
+    .ul-li{
+        margin-bottom: 3rem;
+        width: 100%;
+    }
+
+    .link-p{
+        font-size: 1.2rem;
+    }
+
+    .acti{
+        display: block;
+    }
+
+    .farm-produce,
+    .communite{
+        display: block;
+    }
+
+    table{
+        display: block;
+    }
+
+    tr{
+        display: table-column-group;
+    }
+
+    .community-left img,
+    .farm-left img{
+        width: 95%;
+    }
+
+    .hero-talk{
+        width: 100%;
+    }
+
+    .nav{
+        padding: 1rem 1rem 1rem 1rem;
+        height: 4rem;
+    }
+
+    .hero-div{
+        padding-left: 0;
+        padding-top: 1rem;
+    }
+
+    .hero{
+        height: 21rem;
+    }
+
+    .talk-title{
+        font-size: 2rem;
+        width: 94%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .talk-sub{
+        font-size: .7rem;
+    }
+
+    .hero-signin{
+        width: 5.8rem;
+        height: 2.4rem;
+        font-size: .8rem;
+    }
+
+    .hero-talk{
+        margin-top: 3rem;
+    }
+
+    .logo{
+        width: 3rem;
+    }
+
+    .signin{
+        width: 4rem;
+        height: 2rem;
+        font-size: .6rem;
+        border-radius: 1px;
+    }
+
+    .topbr img{
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+
+    .hamburger{
+        display: block;
+        height: 1.5rem;
+        width: 1.5rem;
+        margin-left: -5rem;
+        padding: .2rem 0 .15rem 0;
+        -webkit-transition: all 0.3s ease-in;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .hamburger.activ .bar:nth-child(2){
+        opacity: 0;
+        transition: .5s ease-in-out;
+    }
+
+    .hamburger.activ .bar:nth-child(1){
+        transform: translateY(5px) rotate(45deg);
+        transition: .5s ease-in-out;
+    }
+
+    .hamburger.activ .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+        transition: .5s ease-in-out;
+    }
+
+    .bar{
+        width: 100%;
+        height: .2rem;
+        margin-bottom: .2rem;
+        border-radius: 3px;
+        color: #000;
+        background-color: #000;
+        display: block;
+    }
+
+    .features{
+        padding: 1.5rem 1rem 1rem 1rem;
+    }
+
+    .features-title{
+        font-size: 1.3rem;
+    }
+
+    .features-grid{
+        margin: 0;
+        display: block;
+        width: 100%;
+    }
+
+    .grid-box{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 1.3rem;
+    }
+
+    .feature2-title{
+        margin-left: 0;
+        font-size: 1.3rem;
+        text-align: center;
+        align-items: center;
+        padding-bottom: .6rem;
+    }
+
+    .farm-produce{
+        width: 100%;
+        padding: 0;
+    }
+
+    .farm-left{
+        width: 100%;
+        flex: 0;
+    }
+
+    .farm-left img{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .farm-right{
+        margin: 0;
+        flex: 0;
+    }
+    
+    .community-title{
+        font-size: 1.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .community-left{
+        margin-left: auto;
+        margin-right: auto;
+        width: 96%;
+    }
+
+    .community-left img{
+        width: 96%;
+    }
+
+    .communite{
+        width: 100%;
+    }
+
+    .community-right{
+        margin-top: 4rem;
+        width: 92%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .right-details{
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: .9rem;
+    }
+
+    .down{
+        width: 87%;
+        height: 15rem;
+    }
+
+    .down-prompt{
+        font-size: 2rem;
+        padding-top: 5rem;
+    }
+
+    .footer-content{
+        width: 80%;
+        text-align: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .hero-signin{
+        border-radius: 3px;
+    }
+}
