@@ -50,8 +50,8 @@ function ProductBuy() {
     console.log(data);
     // setAmount(data.productPrice.replace(/\D/g, ''));
   };
-  fetchBuy();
   useEffect(() => {
+    fetchBuy();
     fetchPro();
   }, [5000]);
 
