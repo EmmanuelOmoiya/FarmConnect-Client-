@@ -14,49 +14,48 @@ function Navbar() {
   return (
     <nav className="nav">
       <Link to="/"><img src={logo} alt="" className="logo" title="FarmConnect" /></Link>
-{
-  user.role === "farmer" ? (
-      <ul className={change ? 'nav-ul acti' : 'nav-ul'} onClick={toggle}>
-        <li className="ul-li" onClick={toggle}>
-          <Link to="/" className="link">
-            <p className="link-p">Home</p>
-          </Link>
-        </li>
-        <li className="ul-li" onClick={toggle}>
-          <Link to="/search" className="link">
-            <p className="link-p">Search</p>
-          </Link>
-        </li>
-        <li className="ul-li" onClick={toggle}>
-          <Link to="/market" className="link">
-            <p className="link-p">Market</p>
-          </Link>
-        </li>
-        <li className="ul-li" onClick={toggle}>
-          <Link to="/dashboard" className="link">
-            <p className="link-p">Dashboard</p>
-          </Link>
-        </li>
-      </ul>
-  ) : (
-       <ul className={change ? 'nav-ul acti' : 'nav-ul'} onClick={toggle}>
-        <li className="ul-li" onClick={toggle}>
-          <Link to="/" className="link">
-            <p className="link-p">Home</p>
-          </Link>
-        </li>
-        <li className="ul-li" onClick={toggle}>
-          <Link to="/search" className="link">
-            <p className="link-p">Search</p>
-          </Link>
-        </li>
-        <li className="ul-li" onClick={toggle}>
-          <Link to="/market" className="link">
-            <p className="link-p">Market</p>
-          </Link>
-        </li>
-      </ul>
-  )}
+      {user.role === "farmer" ? (
+          <ul className={change ? 'nav-ul acti' : 'nav-ul'} onClick={toggle}>
+            <li className="ul-li" onClick={toggle}>
+              <Link to="/" className="link">
+                <p className="link-p">Home</p>
+              </Link>
+            </li>
+            <li className="ul-li" onClick={toggle}>
+              <Link to="/search" className="link">
+                <p className="link-p">Search</p>
+              </Link>
+            </li>
+            <li className="ul-li" onClick={toggle}>
+              <Link to="/market" className="link">
+                <p className="link-p">Market</p>
+              </Link>
+            </li>
+            <li className="ul-li" onClick={toggle}>
+              <Link to="/dashboard" className="link">
+                <p className="link-p">Dashboard</p>
+              </Link>
+            </li>
+          </ul>
+      ) : (
+          <ul className={change ? 'nav-ul acti' : 'nav-ul'} onClick={toggle}>
+            <li className="ul-li" onClick={toggle}>
+              <Link to="/" className="link">
+                <p className="link-p">Home</p>
+              </Link>
+            </li>
+            <li className="ul-li" onClick={toggle}>
+              <Link to="/search" className="link">
+                <p className="link-p">Search</p>
+              </Link>
+            </li>
+            <li className="ul-li" onClick={toggle}>
+              <Link to="/market" className="link">
+                <p className="link-p">Market</p>
+              </Link>
+            </li>
+          </ul>
+      )}
       {isLoggedIn ? (
         <span className="topbr">
           <img src={user.img} alt="" className="profilepic" />
