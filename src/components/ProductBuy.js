@@ -47,6 +47,7 @@ function ProductBuy() {
     const { id } = useParams();
     const { data } = await axios.get(`https://farmconnect-server.herokuapp.com/api/farm/product/${id}`);
     setBuy(data);
+    console.log(data);
     // setAmount(data.productPrice.replace(/\D/g, ''));
   };
   useEffect(() => {
